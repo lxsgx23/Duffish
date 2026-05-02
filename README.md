@@ -1,5 +1,5 @@
 # Duffish Xiangqi Engine
-<img width="1254" height="1254" alt="Duffish_logo" src="https://github.com/user-attachments/assets/3372feb1-2b44-46e3-8bac-15013a5657bd" />
+<img width="600" height="600" alt="Duffish_logo" src="https://github.com/user-attachments/assets/3372feb1-2b44-46e3-8bac-15013a5657bd" />
 
 **Duffish** is a highly aggressive chess variant engine derived from [Fairy‑Stockfish](https://github.com/fairy-stockfish/Fairy-Stockfish). It inherits full support for Xiangqi and dozens of other variants while introducing dedicated evaluation features that promote sharp, sacrificial, and uncompromising play.
 
