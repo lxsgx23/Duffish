@@ -37,6 +37,7 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 ### XEAS Comparison
 
 Duffish 1     2933.9 Elo     334,250 XEAS (against sachess 1.6)
+
 Duffish 1.1   3404.0 Elo     153,867 XEAS (against FSF)
 
 
