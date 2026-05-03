@@ -47,6 +47,7 @@ Duffish 1.1   3404.0 Elo     153,867 XEAS (against FSF)
 
 > **Average winning moves:** 105.9 moves 
 > **Quick‑win threshold:** 77.3 moves
+
 *using same xiangqi NNUE eval file
 
 ---
