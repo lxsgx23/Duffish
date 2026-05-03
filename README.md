@@ -36,10 +36,10 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 
 ### XEAS Comparison
 
-Duffish 1     2933.9 Elo     334,250 XEAS (against sachess 1.6)
-
-Duffish 1.1   3404.0 Elo     153,867 XEAS (against FSF)
-
+| Engine | Elo | XEAS | Discription |
+|---|---|---|---|
+| Duffish 1 | 2933.9 | 334,250 | against sachess 1.6 |
+| Duffish 1.1 | 3404.0 | 153,867 | against FSF |
 
 | Engine | Games | XEAS | Sacs% | E.Sacs% | Shorts% | BadDraw% | AvgWinMvs |
 |---|---|---|---|---|---|---|---|
@@ -47,6 +47,7 @@ Duffish 1.1   3404.0 Elo     153,867 XEAS (against FSF)
 | Fairy‑Stockfish 14 NNUE | 1000 | 65,193 | 15.90 | 12.70 | 0.20 | 35.50 | 175.8 |
 
 > **Average winning moves:** 105.9 moves 
+
 > **Quick‑win threshold:** 77.3 moves
 
 *using same xiangqi NNUE eval file
