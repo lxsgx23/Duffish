@@ -43,12 +43,12 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 
 | Engine | Games | XEAS | Sacs% | E.Sacs% | Shorts% | BadDraw% | AvgWinMvs |
 |---|---|---|---|---|---|---|---|
-| **Duffish 1.1** | 1000 | **153,867** | 20.40 | 13.60 | 16.10 | 23.30 | 70.2 |
-| Fairy‑Stockfish 14 NNUE | 1000 | 65,193 | 15.90 | 12.70 | 0.20 | 35.50 | 175.8 |
+| **Duffish 1.1** | 304 | **134,180** | 27.96 | 23.36 | 1.97 | 27.30 | 155.5 |
+| Fairy‑Stockfish 14 NNUE | 304 | 67,594 | 15.79 | 13.49 | 1.32 | 47.37 | 163.8 |
 
-> **Average winning moves:** 105.9 moves 
+> **Average winning moves:** 159.7 moves 
 
-> **Quick‑win threshold:** 77.3 moves
+> **Quick‑win threshold:** 116.6 moves
 
 *using same xiangqi NNUE eval file
 
