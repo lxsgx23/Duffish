@@ -16,7 +16,7 @@
 
 ### Measuring Aggressiveness
 Aggressiveness in Duffish is quantified using the **Xiangqi Engine Aggressiveness Score (XEAS)**, a metric developed for Xiangqi engines.  
-Typical engines score between **50,000** and **165,000** XEAS. Duffish targets a comparable level of aggression -around **334,250** -in the Xiangqi domain while remaining highly competitive in playing strength.  
+Typical engines score between **50,000** and **165,000** XEAS. Duffish 1 targets a comparable level of aggression -around **334,250** -in the Xiangqi domain while remaining highly competitive in playing strength.  
 On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, well above human grandmaster level.
 
 ### Where Does the Aggressiveness Come From?
@@ -33,6 +33,21 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 
 - **Dynamic Compensation (`DynamicComp`)**  
   A positive compensation factor that makes the engine more confident when it holds an advantage. It dynamically scales the evaluation to prevent overly conservative play in winning positions.
+
+### XEAS Comparison
+
+Duffish 1     2933.9 Elo     334,250 XEAS (against sachess 1.6)
+Duffish 1.1   3404.0 Elo     153,867 XEAS (against FSF)
+
+
+| Engine | Games | XEAS | Sacs% | E.Sacs% | Shorts% | BadDraw% | AvgWinMvs |
+|---|---|---|---|---|---|---|---|
+| **Duffish 1.1** | 1000 | **153,867** | 20.40 | 13.60 | 16.10 | 23.30 | 70.2 |
+| Fairy‑Stockfish 14 NNUE | 1000 | 65,193 | 15.90 | 12.70 | 0.20 | 35.50 | 175.8 |
+
+> **Average winning moves:** 105.9 moves 
+> **Quick‑win threshold:** 77.3 moves
+*using same xiangqi NNUE eval file
 
 ---
 
