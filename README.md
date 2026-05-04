@@ -16,7 +16,7 @@
 
 ### Measuring Aggressiveness
 Aggressiveness in Duffish is quantified using the **Xiangqi Engine Aggressiveness Score (XEAS)**, a metric developed for Xiangqi engines.  
-Typical engines score between **50,000** and **165,000** XEAS. Duffish 1 targets a comparable level of aggression -around **334,250** -in the Xiangqi domain while remaining highly competitive in playing strength.  
+Typical engines score between **40,000** and **80,000** XEAS. Duffish 1.1 targets a comparable level of aggression -around **153,867** -in the Xiangqi domain while remaining highly competitive in playing strength.  
 On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, well above human grandmaster level.
 
 ### Where Does the Aggressiveness Come From?
