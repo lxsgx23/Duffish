@@ -106,7 +106,9 @@ Duffish is a standard **UCI engine** and works with any UCI‑compatible GUI (e.
 ## Credits
 
 Duffish is built on [Fairy‑Stockfish](https://github.com/fairy-stockfish/Fairy-Stockfish) by Fabian Fichter, which in turn derives from [Stockfish](https://stockfishchess.org/).  
+
 The aggressiveness scoring methodology is inspired by the **Patricia** and the **Engine Aggressiveness Score (EAS)** concept.
+
 Thanks x for testing my engine,and making the first XEAS version!
 
 ---
