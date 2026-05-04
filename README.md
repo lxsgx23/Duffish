@@ -86,7 +86,7 @@ Replace `profile-build` with the appropriate target if necessary (e.g., `build` 
 
 ## Usage
 
-Duffish is a standard **UCI engine** and works with any UCI‑compatible GUI (e.g., Sharkchess).  
+Duffish is a standard **UCI engine** and works with any UCI‑compatible GUI (e.g. Sharkchess).  
 
 ---
 
@@ -96,7 +96,7 @@ Duffish is a standard **UCI engine** and works with any UCI‑compatible GUI (e.
 |---|---|---|---|---|---|---|---|---|
 | Pikafish 2026-01-31 | 2000 | 4006.0 | 55,406 | 12.95 | 6.35 | 6.05 | 16.75 | 156.1 |
 | Cyclone 2026-04-20 [Ulitimate] | 6000 | 3988.6 | 54,108 | 11.82 | 6.07 | 7.93 | 19.90 | 149.9 |
-| Bug Chess 2026-01-18 | 2000 | 3929.3 | 49,496 | 13.60 | 6.45 | 5.05 | 22.40 | 157.7 |
+| Bugchess 2026-01-18 | 2000 | 3929.3 | 49,496 | 13.60 | 6.45 | 5.05 | 22.40 | 157.7 |
 | Cyclone 2026-01-01 [Ulitimate] | 2000 | 3952.9 | 45,018 | 11.25 | 5.75 | 6.35 | 24.25 | 153.1 |
 
 > **Average winning moves:** 152.4 moves 
