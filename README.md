@@ -21,11 +21,6 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 
 ### XEAS Comparison
 
-| Engine | Elo | XEAS | Discription |
-|---|---|---|---|
-| Duffish 1 | 2933.9 | 334,250 | against sachess 1.6 |
-| Duffish 1.1 | 3404.0 | 153,867 | against FSF |
-
 | Engine | Games | XEAS | Sacs% | E.Sacs% | Shorts% | BadDraw% | AvgWinMvs |
 |---|---|---|---|---|---|---|---|
 | **Duffish 1.1** | 304 | **134,180** | 27.96 | 23.36 | 1.97 | 27.30 | 155.5 |
@@ -96,7 +91,7 @@ Duffish is built on [Fairy‑Stockfish](https://github.com/fairy-stockfish/Fairy
 
 The aggressiveness scoring methodology is inspired by the **Patricia** and the **Engine Aggressiveness Score (EAS)** concept.
 
-Thanks x for testing my engine,and making the first XEAS version!
+Thanks x , rui for testing my engine!
 
 ---
 
