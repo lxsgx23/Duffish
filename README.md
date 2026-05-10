@@ -19,21 +19,6 @@ Aggressiveness in Duffish is quantified using the **Xiangqi Engine Aggressivenes
 Typical engines score between **40,000** and **80,000** XEAS. Duffish 1.1 targets a comparable level of aggression -around **153,867** -in the Xiangqi domain while remaining highly competitive in playing strength.  
 On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, well above human grandmaster level.
 
-### Where Does the Aggressiveness Come From?
-
-- **Default Contempt of −39 centipawns**  
-  Negative Contempt makes the engine avoid draws and actively seek winning chances.  
-  *Note:* Under the AXF chasing rule in Xiangqi, the effect of Contempt may be partially suppressed, but it remains active in all other supported variants.
-
-- **Partially Asymmetrical Evaluation**  
-  Sacrifice‑related evaluation bonuses are **only** applied to the side to move at the root. The opponent never receives an aggressiveness bonus for giving up material. This design ensures that every sacrifice bonus directly benefits the engine’s own attacking ambitions.
-
-- **Sacrifice Bonus (`SacBonus`)**  
-  A dedicated evaluation term that grants an extra score when the side to move is materially behind (i.e., has sacrificed material), actively encouraging sacrificial attacks.
-
-- **Dynamic Compensation (`DynamicComp`)**  
-  A positive compensation factor that makes the engine more confident when it holds an advantage. It dynamically scales the evaluation to prevent overly conservative play in winning positions.
-
 ### XEAS Comparison
 
 | Engine | Elo | XEAS | Discription |
@@ -58,14 +43,16 @@ On the **Kaka's rating list**, Duffish 1 reaches approximately **2933.9 Elo**, w
 
 Duffish supports **all standard UCI options** from Fairy‑Stockfish, plus the following custom parameters that fine‑tune its aggressive behavior.
 
-| Option             | Range       |  Default               | Description                                                                                                                                                                                                                                                                                                                                 |
-|--------------------|-------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Aggressiveness** | 0 – 200     | 100                    | Controls the overall playing style.<br> **>100** → **more aggressive:** futility margins tighten, null‑move reduction increases, ProbCut threshold lowers, check extensions trigger more easily, LMR reduction decreases for attacking moves, king‑attack contribution increases, and overall evaluation is amplified.<br> **<100** → **more conservative** (reverse effects).<br> **=100** → neutral (no effect). |
-| **Contempt**       | −100 – 100  | −39                    | Positive values encourage avoiding draws (contempt for the opponent); negative values increase willingness to accept draws. Affects only the draw evaluation of the **side to move at the root**; the opponent’s draw score is left unchanged.                                                                                                       |
-| **SacBonus**       | 0 – 100     | 30                     | Extra evaluation bonus added when the side to move trails in material, rewarding sacrificial play.                                                                                                                                                                                                                                          |
-| **DynamicComp**    | 0 – 100     | 43                     | When positive, injects a dynamic compensation term proportional to the evaluation advantage, discouraging the engine from becoming excessively passive in favorable positions.                                                                                                                                                              |
+| Option               | Range       | Default | Description                                                                                                                                                                                                                                                                                                                                 |
+|----------------------|-------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Aggressiveness**   | 0 – 200     | 100     | Controls the overall playing style.<br> **>100** → **more aggressive:** futility margins tighten, null‑move reduction increases, ProbCut threshold lowers, check extensions trigger more easily, LMR reduction decreases for attacking moves, king‑attack contribution increases, and overall evaluation is amplified.<br> **<100** → **more conservative** (reverse effects).<br> **=100** → neutral (no effect). |
+| **DrawValue**        | −100 – 100  | −39     | Affects only the draw evaluation of the **side to move at the root**; the opponent’s draw score is left unchanged.Under the AXF chasing rule in Xiangqi, the effect of Contempt may be partially suppressed, but it remains active in all other supported variants.                                                                                                                                                                                                                         |
+| **SacBonus**         | 0 – 100     | 30      | Extra evaluation bonus added when the side to move trails in material, rewarding sacrificial play.                                                                                                                                                                                                                                          |
+| **DynamicComp**      | 0 – 100     | 43      | When positive, injects a dynamic compensation term proportional to the evaluation advantage, discouraging the engine from becoming excessively passive in favorable positions.                                                                                                                                                              |
+| **AdvisorBreakBonus**| 0 – 100     | 10      | Awarded when the side to move captures or breaks an opponent’s advisor, encouraging attacks that dismantle the king’s defensive structure.                                                                                                                                                                                                 |
+| **BishopBreakBonus** | 0 – 100     | 15      | Awarded when the side to move captures or breaks an opponent’s bishop (elephant), promoting positional sacrifices to open the board or weaken the defence.                                                                                                                                                                                 |
 
-*Values given as “Default” hasn't benn tuned for the best XEAS performance,because I don't have enough computing power.*
+*Since Duffish 1.2,some specialized UCI option for Xiangqi has been added,please disable them to play other variants.*
 
 ---
 
