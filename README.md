@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img width="300" height="300" alt="Duffish_logo" src="https://github.com/user-attachments/assets/3372feb1-2b44-46e3-8bac-15013a5657bd" />
+<img width="450" height="450" alt="logo已修改" src="https://github.com/user-attachments/assets/ef279ca5-92ac-4b8e-88ed-aee491ebe7fd" />
 </div>
 
 
